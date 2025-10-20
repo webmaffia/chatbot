@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li {
+  list-style-type: square;
+  margin-left: 30px;
+  padding: 2px;
+}
+
+
+.jashMsg{
+  right: 1vw;
+
+  position: absolute;
+  background: rgb(0, 0, 0);
+  width: 15vw;
+  z-index: 9;
+ overflow-x: hidden;
+  
+}
+.jashMsg::-webkit-scrollbar {
+  display: none;
+}
+html,body {
+  overflow:hidden ;
+}
+
+.jashFixCta {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+
+}
+
+
+.JashQue {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 18px 18px 4px 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  word-wrap: break-word;
+  max-width: 280px;
+}
+
+.JashQue::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -8px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-left-color: #764ba2;
+  border-bottom: none;
+  border-right: none;
+}
+
+.avatarAnsJash {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 18px 18px 18px 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  word-wrap: break-word;
+  max-width: 280px;
+}
+
+.avatarAnsJash::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-right-color: #f5576c;
+  border-bottom: none;
+  border-left: none;
+}
