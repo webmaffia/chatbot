@@ -25,7 +25,7 @@ li {
 }
 
 .videoWarapperWidth {
-  width: 67vw !important;
+  width: 60vw !important;
 }
 
 @media (max-width: 640px) {
