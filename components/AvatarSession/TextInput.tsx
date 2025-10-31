@@ -64,10 +64,10 @@ export const TextInput: React.FC = () => {
   }, [message, previousText, startListening, stopListening]);
 
   return (
-    <div className="flex flex-row gap-2 items-end w-full">
+    <div className="flex flex-row gap-2 items-end w-full chatInput">
     
       <Input
-        className="min-w-[500px]"
+        className="max-w-[500px]"
         placeholder={`Type something for the avatar to ${taskType === TaskType.REPEAT ? "repeat" : "respond"}...`}
         value={message}
         onChange={setMessage}

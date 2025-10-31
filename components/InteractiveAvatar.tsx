@@ -144,19 +144,19 @@ function InteractiveAvatar() {
 
   return (
     <div className="w-full flex flex-col gap-4">
-      <div className="flex flex-col rounded-xl  overflow-hidden">
-        <div className="relative w-full aspect-video overflow-hidden flex flex-col items-center justify-center">
+      <div className="flex flex-col rounded-xl overflow-hidden">
+        <div className="relative w-full aspect-video overflow-hidden flex flex-col items-center justify-center videoWarapperWidth">
           {sessionState !== StreamingAvatarSessionState.INACTIVE ? (
             <AvatarVideo ref={mediaStream} />
           ) : (
            <div></div>
           )}
         </div>
-        <div className="flex flex-col gap-3 items-center justify-center p-4  w-full">
+        <div className="flex flex-col gap-3 items-center justify-center p-2 sm:p-4 w-full">
           {sessionState === StreamingAvatarSessionState.CONNECTED ? (
             <AvatarControls />
           ) : sessionState === StreamingAvatarSessionState.INACTIVE ? (
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-2 sm:gap-4">
               <Button
                 className="jashFixCta"
                 onClick={async () => {
