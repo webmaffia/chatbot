@@ -21,7 +21,7 @@ import { MessageHistory } from "./AvatarSession/MessageHistory";
 
 const DEFAULT_CONFIG: StartAvatarRequest = {
   quality: AvatarQuality.High,
-  avatarName: "a5dafcdb521244d38d57f3d4d9e448f9",
+  avatarName: "Ann_Therapist_public",
   knowledgeId: "d51ced44f3a0488c828c7e08b85900db",
   voice: {
     rate: 1.5,
