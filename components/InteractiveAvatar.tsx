@@ -22,7 +22,7 @@ import { MessageHistory } from "./AvatarSession/MessageHistory";
 const DEFAULT_CONFIG: StartAvatarRequest = {
   quality: AvatarQuality.High,
   avatarName: "Ann_Therapist_public",
-  knowledgeId: "d51ced44f3a0488c828c7e08b85900db",
+  knowledgeId: "b099f04475b645fcbfd9303e56bcd7c9",
   voice: {
     rate: 1.5,
     emotion: VoiceEmotion.EXCITED,
